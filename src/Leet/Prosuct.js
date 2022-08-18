@@ -10,6 +10,7 @@ export const Prosuct = () => {
 
     <nav>
         <Link to='featured'>Featured</Link>
+        <br />
         <Link to='new'>New</Link>
 
     </nav>

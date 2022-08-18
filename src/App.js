@@ -1,29 +1,10 @@
 
 import "./App.css";
-import CountReducer from "./Components/CountReducer";
-import CounterOne from "./Components/CounterOne";
 
 import React from "react";
-import People from "./Components/People";
-import ChangeBackground from "./Components/ChangeBackground";
 import {Route,Routes} from 'react-router-dom'
-import Home from "./Components/Home";
-import About from "./Components/About";
-
-import { NavBar } from "./Components/NavBar";
-import { OrderSummary } from "./Components/OrderSummary";
-import { NoMatch } from "./Components/NoMatch";
-import { Prosuct } from "./Components/Prosuct";
-import { User } from "./Components/User";
-import { UserDetails } from "./Components/UserDetails";
-import { Admin } from "./Components/Admin";
-import ParentComponents from "./Components/ParentComponents";
-import GreetingUser from "./Components/GreetingUser";
-import ListName from "./Components/ListName";
-import Raf from "./Components/Raf";
-import Header from "./Components/Header";
-import BarNav from "./Components/BarNav";
-
+import NavBar from "./Components/NavBar";
+import AppRoutes from "./AppRoutes";
 
 
 
@@ -48,7 +29,10 @@ function App() {
   
   <>
 
-  <h1>Hello</h1>
+ 
+  <NavBar />
+
+ <AppRoutes />
   
  
 
@@ -67,7 +51,7 @@ function App() {
    
 
 
-
+{/* 
 
 
   <Routes>
@@ -78,11 +62,21 @@ function App() {
     <Route path='*' element={<NoMatch />}></Route>
 
     <Route path='Product' element={<Prosuct />}></Route>
-    <Route path='User' element={<User />}></Route>
 
-    <Route path='User/:userId' element={<UserDetails />}></Route>
+    <Route path='users' element={<User />}>
+    <Route path='userId' element={<UserDetails />} />
+    
+    <Route path='admin' element={<Admin />} />
 
-    <Route path='admin' element={<Admin />}></Route>
+
+    </Route>
+
+    
+   
+
+   
+
+   
 
 
 
@@ -93,6 +87,8 @@ function App() {
 
    
   </Routes>
+
+  */}
   
   
   
