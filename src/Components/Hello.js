@@ -1,48 +1,14 @@
+import React from 'react'
 
-
-import {useState} from 'react'
-
-function Hello() {
-    const[name,setName]=useState("Praveen");
-
-    const changeName=()=>{
-
-       
-
-
-
-        if(name=="Praveen"){
-            setName("Sharma");
-        }
-        else{
-            setName("Praveen");
-        }
-
-
-    };
-
-    
+function Hello(props) {
 
   return (
-
-
     <div>
-        <h1>Hello {name} sir in the gm </h1>
-        <button onClick={changeName}>click me</button>
-
+        <h1>Hello import {5*5} + {5+5} = {25+10} </h1>
+        <h1>Hello {props.name}</h1>
+        <h1>Herro Name {props.heroname}</h1>
     </div>
-
-
-
-
-
   )
-
-
-
-
 }
 
-
-
-export default Hello;
+export default  Hello;
